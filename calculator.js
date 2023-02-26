@@ -1,4 +1,4 @@
-currentBtn();
+addButtonClickListeners();
 display();
 
 let firstNumber = "";
