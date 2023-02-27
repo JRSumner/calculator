@@ -1,6 +1,20 @@
-/*  #region Header Container */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e5e7eb;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* #region Header Container */
 .header-container {
-  /* styles for the header */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(237, 150, 57);
+  color: #302929;
+  font-family: "Quicksand", sans-serif;
 }
 /* #endregion */
 
@@ -10,6 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 
 .calculator {
@@ -20,8 +35,10 @@
   align-items: center;
   justify-content: center;
   padding: 15px;
-  background-color: #eee;
+  background-color: #828282;
   border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+  border: 2px solid #5b5d61;
 }
 
 .display {
@@ -52,7 +69,7 @@
 
 .operator {
   flex: 1;
-  background-color: #f00;
+  background-color: rgb(237, 150, 57);
   color: white;
   font-size: 1.5em;
   border: none;
@@ -86,6 +103,24 @@
 
 /* #region Footer Container */
 .footer-container {
-  /* styles for the footer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(237, 150, 57);
+  font-size: larger;
+  color: #302929;
+  font-family: "Quicksand", sans-serif;
+  padding: 10px;
+}
+
+a {
+  margin-right: 5px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-gh-logo {
+  width: 30px;
+  height: 30px;
 }
 /* #endregion */
