@@ -21,3 +21,11 @@ function operate(num1, num2, operator) {
       break;
   }
 }
+
+module.exports = {
+  add,
+  subtract,
+  multiply,
+  divide,
+  operate,
+};

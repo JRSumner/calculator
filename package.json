@@ -1,0 +1,11 @@
+{
+  "name": "Calculator",
+  "version": "1.0.0",
+  "description": "The calculator project completed for The Odin Project.",
+  "scripts": {
+    "test": "jest --config=jest.config.js"
+  },
+  "devDependencies": {
+    "jest": "^29.4.3"
+  }
+}

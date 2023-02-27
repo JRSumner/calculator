@@ -41,17 +41,23 @@ function handleOperatorButton(button) {
   if (isOperator(button.textContent)) {
     operatorSelected = true;
     operator = button.textContent;
+    display(button.textContent);
   }
 }
 
-function display(value = 0) {
+function display(value = "0") {
   const display = document.querySelector(".display span");
-  display.textContent = value;
+
+  value.length > 19
+    ? (display.textContent = "Max Characters!")
+    : (display.textContent = value);
 }
 
 function displayResult() {
-  const result = operate(Number(firstNumber), Number(secondNumber), operator);
-  display(result);
+  if (firstNumber !== "" && secondNumber != "") {
+    const result = operate(Number(firstNumber), Number(secondNumber), operator);
+    display(result);
+  }
 }
 
 function clearDisplay() {
