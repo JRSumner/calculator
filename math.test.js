@@ -1,4 +1,4 @@
-const { add, subtract, multiply, divide, operate } = require("./math");
+import { add, subtract, multiply, divide } from "./math";
 
 describe("math functions", () => {
   test("add function should add two numbers together", () => {
